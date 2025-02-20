@@ -8,48 +8,11 @@ version = '1.0-SNAPSHOT'
 //repositories {
     //mavenCentral()
 //}
-def artifactoryUser = "s.platformgrp.cm"
-def artifactoryToken = "AKCp5ek8Gvgr6ePQxVfSseL2xuH8bdmHSENatCVWDNYUHQ1vPauNaH9kCYU3SDh3dvYUMq6mh"
+//def artifactoryUser = "s.platformgrp.cm"
+//def artifactoryToken = "AKCp5ek8Gvgr6ePQxVfSseL2xuH8bdmHSENatCVWDNYUHQ1vPauNaH9kCYU3SDh3dvYUMq6mh"
 repositories {
     mavenLocal()
-    maven {
-        url "https://tr1.jfrog.io/tr1/libs-release-local/"
-        credentials {
-            username artifactoryUser
-            password artifactoryToken
-        }        
-    }
-maven {
-        url "https://tr1.jfrog.io/tr1/cobalt-release-local/"
-        credentials {
-            username artifactoryUser
-            password artifactoryToken
-        }        
-    }
-maven {
-        url "https://tr1.jfrog.io/artifactory/jcenter-cache/"
-        credentials {
-            username artifactoryUser
-            password artifactoryToken
-        }        
-    }
-maven {
-        url "https://tr1.jfrog.io/tr1/libs-release/"
-        credentials {
-            username artifactoryUser
-            password artifactoryToken
-        }        
-    }
-maven {
-        url "https://tr1.jfrog.io/artifactory/maven-central-cache"
-        credentials {
-            username artifactoryUser
-            password artifactoryToken
-        }        
-    }
-     flatDir {
-       dirs("lib_jdk1.8")
-   }
+    mavenCentral()    
 }
 
 dependencies {
