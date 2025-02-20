@@ -20,7 +20,7 @@ dependencies {
     implementation 'commons-collections:commons-collections:3.2.1'
     
     // Spring Core - older versions have had various vulnerabilities
-    implementation 'org.springframework:spring-core:4.3.13.RELEASE'
+    implementation 'org.springframework:spring-core:6.2.3'
 
     // Log4j - version 1.x is known for security issues and is end-of-life
     implementation 'log4j:log4j:1.2.17'
