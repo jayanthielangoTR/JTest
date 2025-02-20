@@ -27,7 +27,7 @@ dependencies {
     
     implementation("io.springfox:springfox-swagger-ui:2.9.2")
     implementation("io.swagger:swagger-annotations:1.5.22")
-    implementation("io.swagger:swagger-models:1.5.22")
+    implementation("io.swagger:swagger-models:1.6.15")
 
     testImplementation 'junit:junit:4.13.2'
     // Other dependencies
